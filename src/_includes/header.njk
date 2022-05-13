@@ -1,0 +1,14 @@
+<header>
+    <h1 class="home display-3 fw-bold text-white">
+        <a href="{{ '/' | url }}">{{ metadata.title }}</a>
+    </h1>
+    <p class="fs-5 mb-4">DJ / Producer from the UK</p>
+
+    <ul class="nav">
+        {%- for entry in collections.all | eleventyNavigation %}
+            <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
+                <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+            </li>
+        {%- endfor %}
+    </ul>
+</header>

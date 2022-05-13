@@ -1,7 +1,7 @@
 ---
 title: This is my first post.
 description: This is a post on My Blog about agile frameworks.
-date: 2018-05-01
+date: 2022-05-13
 tags:
   - another tag
 layout: layouts/post.njk
@@ -18,6 +18,7 @@ Capitalize on low hanging fruit to identify a ballpark value added activity to b
 // this is a command
 function myCommand() {
 +	let counter = 0;
+-	let counter = 0;
 +	counter++;
 }
 

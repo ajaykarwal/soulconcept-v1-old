@@ -1,0 +1,7 @@
+<footer>
+    <div class="d-grid d-sm-flex flex-wrap gap-3 justify-content-sm-center">
+        {%- for social in metadata.socials -%}
+            <a class="btn btn-sm btn-outline-light btn-lg px-4" href="{{ social.url }}" target="_blank">{{ social.label }}</a>
+        {%- endfor -%}
+    </div>
+</footer>

@@ -1,0 +1,59 @@
+{
+  "title": "Soul Concept",
+  "url": "https://soul-concept.co.uk/",
+  "language": "en",
+  "description": "DJ / Producer from the UK",
+  "feed": {
+    "subtitle": "DJ / Producer from the UK",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://soul-concept.co.uk"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://soul-concept.co.uk/feed/feed.json"
+  },
+  "author": {
+    "name": "Ajay Karwal",
+    "email": "ajaykarwal@gmail.com",
+    "url": "https://soul-concept.co.uk/about-me/"
+  },
+  "socials": [
+    {
+      "label": "Twitch",
+      "url": "https://twitch.tv/soulconceptuk"
+    },
+    {
+      "label": "Soundcloud",
+      "url": "https://soundcloud.com/soulconceptuk"
+    },
+    {
+      "label": "Mixcloud",
+      "url": "https://mixcloud.com/soulconceptuk"
+    },
+    {
+      "label": "Bandcamp",
+      "url": "https://soulconcept.bandcamp.com/"
+    },
+    {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/soulconceptuk/"
+    },
+    {
+      "label": "Twitter",
+      "url": "https://twitter.com/soulconceptuk/"
+    },
+    {
+      "label": "Facebook",
+      "url": "https://www.facebook.com/soulconceptuk/"
+    },
+    {
+      "label": "Discord",
+      "url": "https://discord.gg/BrqSGhB6Yq"
+    },
+    {
+      "label": "Email",
+      "url": "mailto:soulconceptuk@gmail.com"
+    }
+  ]
+}
