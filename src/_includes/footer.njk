@@ -1,7 +1,10 @@
 <footer>
     <div class="d-grid d-sm-flex flex-wrap gap-3 justify-content-sm-center">
         {%- for social in metadata.socials -%}
-            <a class="btn btn-sm btn-outline-light btn-lg px-4" href="{{ social.url }}" target="_blank">{{ social.label }}</a>
+            {% set url %}/assets/icons/{{social.id}}.svg{% endset %}
+            <a class="btn btn-link px-4" href="{{ social.url }}" target="_blank">
+                <img src={{ url | url }} alt="{{ social.label }}">
+            </a>
         {%- endfor -%}
     </div>
 </footer>

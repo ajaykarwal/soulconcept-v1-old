@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $gutter * 3;
+  h1 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+    .logo {
+      height: 30px;
+      margin-right: $gutter;
+      path {
+        fill: var(--foreground);
+      }
+    }
+    .name {
+      font-size: 18px;
+      letter-spacing: -0.05rem;
+      text-decoration: none;
+      color: var(--foreground);
+      span {
+        font-weight: $fw-normal;
+      }
+    }
+  }
+}

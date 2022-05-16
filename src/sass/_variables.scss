@@ -1,0 +1,99 @@
+/* -------------------------------------------------------------------------- */
+/*                                  FUNCTIONS                                 */
+/* -------------------------------------------------------------------------- */
+
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+	$min: map-get($breakpoints, $name);
+	@return if($min != 0, $min, null);
+}
+
+// z-index layering
+@function z($layer) {
+	@if map-has-key($z-layers, $layer) == false {
+		@warn "No layer found for `#{$layer}` in $z-layers map. Property omitted.";
+	}
+
+	@return map-get($z-layers, $layer);
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  VARIABLES                                 */
+/* -------------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap');
+
+$dark: #161E25;
+$light: #EEEFF0;
+
+:root {
+    --background: #{$light};
+    --foreground: #{$dark};
+
+    // Test dark mode
+    // --background: #{$dark};
+    // --foreground: #{$light};
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --background: #{$dark};
+      --foreground: #{$light};
+  }
+}
+
+$fw-normal: 400;
+$fw-bold: 700;
+$gutter: 10px;
+
+$border-radius: 6px;
+$border-radius-sm: 3px;
+$border-radius-lg: 10px;
+
+$box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+$box-shadow-elevated: 0 6px 12px 0 rgba(0, 0, 0, 0.1);
+
+$breakpoints: (
+    sm: 375px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+);
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   MIXINS                                   */
+/* -------------------------------------------------------------------------- */
+@function calculateRem($size) {
+	$remSize: $size / 16px;
+	@return $remSize * 1rem;
+}
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+}
+@mixin mq($name) {
+	$min: breakpoint-min($name, $breakpoints);
+	@if $min {
+		@media (min-width: $min) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}
+
+@mixin mq-down($name) {
+	$min: breakpoint-min($name, $breakpoints);
+	@if $min {
+		@media (max-width: ($min - 1px)) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}
+
+

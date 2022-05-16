@@ -97,6 +97,11 @@ module.exports = function (eleventyConfig) {
     ghostMode: false,
   });
 
+  // Pass-through files
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
+  eleventyConfig.addPassthroughCopy("src/site.webmanifest");
+  eleventyConfig.addPassthroughCopy("src/assets");
+
   return {
     // Control which files Eleventy will process
     // e.g.: *.md, *.njk, *.html, *.liquid
