@@ -8,16 +8,16 @@
     "subtitle": "DJ / Producer from the UK",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://soul-concept.co.uk"
+    "id": "https://soulconcept.uk"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://soul-concept.co.uk/feed/feed.json"
+    "url": "https://soulconcept.uk/feed/feed.json"
   },
   "author": {
     "name": "Ajay Karwal",
     "email": "ajaykarwal@gmail.com",
-    "url": "https://soul-concept.co.uk/about-me/"
+    "url": "https://soulconcept.uk/about-me/"
   },
   "socials": [
     {
@@ -38,7 +38,7 @@
     {
       "id": "bandcamp",
       "label": "Bandcamp",
-      "url": "https://soulconcept.bandcamp.com/"
+      "url": "https://soulconceptuk.bandcamp.com/"
     },
     {
       "id": "instagram",

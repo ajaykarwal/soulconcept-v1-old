@@ -1,0 +1,17 @@
+.releases {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.release {
+  &__artwork {
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
